@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestión de Incidentes ITIL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Gestión de Incidentes</h1>
+    <div id="incident-form">
+        <h2>Crear Incidente</h2>
+        <form id="form">
+            <input type="text" id="titulo" placeholder="Título" required>
+            <textarea id="descripcion" placeholder="Descripción" required></textarea>
+            <select id="estado">
+                <option value="Abierto">Abierto</option>
+                <option value="En Proceso">En Proceso</option>
+                <option value="Cerrado">Cerrado</option>
+            </select>
+            <button type="submit">Crear Incidente</button>
+        </form>
+    </div>
+    <div id="incident-list">
+        <h2>Lista de Incidentes</h2>
+        <ul id="incidents"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
